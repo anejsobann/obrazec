@@ -29,7 +29,7 @@
                     <input type="email" name="email" placeholder="name@domain.com" id="textF">
                 </div>
             </div>
-            <form action="ustvarigeslo.html">
+            <form id="emailForm" action="ustvarigeslo.html">
                 <div class="gumbNaprej">
                     <button type="submit" class="gumb">
                         <h3 class="naprejbarva">Naprej</h3>
@@ -115,7 +115,7 @@
             return emailRegex.test(email);
         }
 
-        const emailField = document.getElementById("textF")
+        const emailField = document.getElementById("textF");
 
         emailField.addEventListener('input', (e) => {
             if (!validateEmail(emailField.value)) {
@@ -126,6 +126,12 @@
             }
         });
 
+        const form = document.getElementById("emailForm");
+        form.addEventListener("submit", (e) => {
+            if (!validateEmail(emailField.value)) {
+                e.preventDefault();
+            }
+        });
 
 
 
