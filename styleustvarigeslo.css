@@ -1,242 +1,254 @@
-
 @import url(keyframes.css);
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@font-face{
-    font-family: mixUITiltle;
-    src:url("https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2") format("woff2");
+@font-face {
+  font-family: mixUITiltle;
+  src: url("https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2")
+    format("woff2");
 }
-@font-face{
-    font-family: mixUIBold;
-    src:url("https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2") format("woff2");
+@font-face {
+  font-family: mixUIBold;
+  src: url("https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2")
+    format("woff2");
 }
-@font-face{
-    font-family: mixUIRegular;
-    src:url("https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2") format("woff2");
-}
-
-@font-face{
-    font-family: CircularSpotifyBlack;
-    src:url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2") format("woff2");
+@font-face {
+  font-family: mixUIRegular;
+  src: url("https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2")
+    format("woff2");
 }
 
-@font-face{
-    font-family: CircularSpotifyBold;
-    src:url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2") format("woff2");
+@font-face {
+  font-family: CircularSpotifyBlack;
+  src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2")
+    format("woff2");
 }
 
-@font-face{
-    font-family: CircularSpotifyBook;
-    src:url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2") format("woff2");
+@font-face {
+  font-family: CircularSpotifyBold;
+  src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2")
+    format("woff2");
 }
 
-
-html,body{
-    height: 100%;
+@font-face {
+  font-family: CircularSpotifyBook;
+  src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2")
+    format("woff2");
 }
 
-body{
-    color: white;
-    background-color: #121212;
+html,
+body {
+  height: 100%;
 }
 
-.glava{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0px 24px;
+body {
+  color: white;
+  background-color: #121212;
 }
 
-.glavni{
-    margin: 0 auto 0;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.glava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px 24px;
 }
 
-.progressbar{
-    background:#7C7C7C;
-    width: 436px;
-    height: 2px;
-    display: flex;
+.glavni {
+  margin: 0 auto 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.progressbar div{
-    height: 2px;
-    width: 0%;
+.progressbar {
+  background: #7c7c7c;
+  width: 436px;
+  height: 2px;
+  display: flex;
 }
 
-.prviProgres{
-    background:#1ED760; 
-    animation: prviProgres 0.2s linear forwards;
+.progressbar div {
+  height: 2px;
+  width: 0%;
 }
 
-
-.zacetniDiv{
-    height:80px;
-    width: 100%;
-    display: flex;
+.prviProgres {
+  background: #1ed760;
+  animation: prviProgres 0.2s linear forwards;
 }
 
-.gumb1{
-    width: 56px;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    background-color: #121212;
-    cursor: pointer;
+.zacetniDiv {
+  height: 80px;
+  width: 100%;
+  display: flex;
 }
 
-.Svg-nazaj-gumb:hover{
-    fill: rgb(255, 255, 255);
+.gumb1 {
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  cursor: pointer;
 }
 
-.Svg-nazaj-gumb{
-    height: 24px;
-    width: 24px;
-    fill:#bdb3b3;
-    display: block;
+.Svg-nazaj-gumb:hover {
+  fill: rgb(255, 255, 255);
 }
 
-.prviText{
-    height:80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.Svg-nazaj-gumb {
+  height: 24px;
+  width: 24px;
+  fill: #bdb3b3;
+  display: block;
 }
 
-.korak{
-    font-family: mixUIRegular;
-    color: #bdb3b3;
-    margin-right: 11px;
+.prviText {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.ustvariG{
-    color: white;
-    font-family: mixUIBold;
-    margin-top: 4px;
+.korak {
+  font-family: mixUIRegular;
+  color: #bdb3b3;
+  margin-right: 11px;
 }
 
-.drugiDiv{
-    height:22px;
-    width: 324px;
-    margin-top:18px;
+.ustvariG {
+  color: white;
+  font-family: mixUIBold;
+  margin-top: 4px;
 }
 
-.geslotext{
-    font-size: 14px;
-    font-family: mixUIBold;
+.drugiDiv {
+  height: 22px;
+  width: 324px;
+  margin-top: 18px;
 }
 
-#password{
-    all:unset;
-    width:298px;
-    height:22px;
-    border-radius: 4px;
-    background-color: #121212;
-    border:1px #818181 solid;
-    color: white;
-    font-size:16px;
-    font-family: mixUIRegular;
-    padding: 12px;
-    margin-top:8px;
-    display: block;
+.geslotext {
+  font-size: 14px;
+  font-family: mixUIBold;
 }
 
-#pasword:hover{
-    border-color: white;
+#password {
+  all: unset;
+  width: 298px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #121212;
+  border: 1px #818181 solid;
+  color: white;
+  font-size: 16px;
+  font-family: mixUIRegular;
+  padding: 12px;
+  margin-top: 8px;
+  display: block;
 }
 
-.ikonaskrij{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    right: 12px;
+#pasword:hover {
+  border-color: white;
 }
 
-.ikonaskrij:hover{
-    color: white;
+.ikonaskrij {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  right: 12px;
+  cursor: pointer;
+}
+.ikonaskrij > * {
+  fill: rgb(179, 179, 179);
 }
 
-.DivgesloMoraVsebovati{
-    margin-top: 18px;
+.ikonaskrij > :hover {
+  fill: #fff;
+  transform: scale(1.05);
 }
 
-.gesloMoraVsebovati{
-    font-size: 14px;
-    font-family: mixUIBold;
+.DivgesloMoraVsebovati {
+  margin-top: 18px;
 }
 
-.gumb{
-    width: 324px;
-    height: 48px;
-    background-color: #1ED760;
-    border: unset;
-    border-radius: 40px;
-    font-family: mixUIRegular;
-    cursor: pointer;
-    margin-top: 24px;
+.gesloMoraVsebovati {
+  font-size: 14px;
+  font-family: mixUIBold;
 }
 
-.gumb:hover{
-    background-color: #3be477;
+.gumb {
+  width: 324px;
+  height: 48px;
+  background-color: #1ed760;
+  border: unset;
+  border-radius: 40px;
+  font-family: mixUIRegular;
+  cursor: pointer;
+  margin-top: 24px;
 }
 
-.noga{
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
-    font-family: mixUIRegular;
-    font-size: 12px;
-    color:#B3B3B3;
-    padding: 24px;
-    text-align: center;
+.gumb:hover {
+  background-color: #3be477;
 }
 
-#del1{
-    font-family: mixUIRegular;
-    font-size: 12px;
-    color:#B3B3B3;
+.noga {
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
+  padding: 24px;
+  text-align: center;
 }
 
-#del2{
-    font-family: mixUIRegular;
-    font-size: 12px;
-    color:#B3B3B3;
+#del1 {
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+#del2 {
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
 }
 
 .wrapCheck {
-    position: relative;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 8px;
 }
 
 .checked {
-    position: absolute;
-    top: 0;
-
+  position: absolute;
+  left: 0;
 }
 
 .checked.false {
-    display: none;
+  display: none;
 }
-
 
 .check {
-    display: block;
+  display: block;
 }
 
-#span1{
-    font-size: 14px;
-    font-family: mixUIRegular;
-    font-weight:450;
-    
+#span1 {
+  margin-left: 8px;
+  font-size: 14px;
+  font-family: mixUIRegular;
+  font-weight: 450;
 }
 
-
+.ikonaskrij .off {
+  display: none;
+}
